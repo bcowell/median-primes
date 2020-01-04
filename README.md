@@ -1,15 +1,15 @@
 # median-primes
+Given an upper limit of n.
+Return an array of the median prime numbers of the set of prime numbers less than n.
 
-- Frontend    React/Redux (bootstrapped with Create-React-App)
-- Backend     Node/Express (babel to transpile ES6/7)
-
-# TODO
-- Bump nodejs versions for server
+Uses Sieve of Eratosthenes algorithm [wikipedia page](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
 
 # How does it look?
 
-
 # Getting Started
+- Frontend React/Redux (bootstrapped with Create-React-App)
+- Backend Node/Express (babel to transpile ES6/7)
+
 You must install both the client and server before you can run them.
 
 ## `yarn` or `yarn install`

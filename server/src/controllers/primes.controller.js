@@ -13,7 +13,6 @@ export const doFindMedianPrimes = async (req, res) => {
             .send({ 'status': 'success', 'data': data });
     }
     catch (err) {
-        console.log(err);
         return res
             .status(INTERNAL_SERVER_ERROR)
             .send({ 'status': 'error', 'error': err });

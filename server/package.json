@@ -1,22 +1,23 @@
 {
     "name": "server",
-    "author": "Brayden Cowell",
+    "author": "Brayden Cowell - brayden.cowell@protonmail.com",
     "license": "MIT",
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
     "scripts": {
+        "start": "nodemon --exec babel-node src/server.js",
         "build": "babel src --out-dir build",
         "run": "node build/server.js",
-        "start": "env-cmd .env nodemon --exec ./node_modules/.bin/babel-node src/server.js"
+        "test": "jest --watchAll"
     },
     "dependencies": {
         "@babel/runtime": "^7.2.0",
-        "babel-plugin-inline-dotenv": "^1.2.0",
         "cors": "^2.8.5",
-        "dotenv": "^6.2.0",
         "express": "^4.17.1",
-        "http-status-codes": "^1.3.2"
+        "http-status-codes": "^1.3.2",
+        "jest": "^24.9.0",
+        "supertest": "^4.0.2"
     },
     "devDependencies": {
         "@babel/cli": "^7.1.2",
@@ -26,9 +27,13 @@
         "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
         "@babel/plugin-transform-runtime": "^7.2.0",
         "@babel/preset-env": "^7.1.0",
-        "@babel/preset-react": "^7.6.3",
         "babel-plugin-module-resolver": "^3.2.0",
-        "env-cmd": "^8.0.2",
         "nodemon": "^1.19.1"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "coveragePathIgnorePatterns": [
+            "/node_modules/"
+        ]
     }
 }

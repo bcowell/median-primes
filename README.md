@@ -3,8 +3,7 @@ Given an upper limit of n.
 Return an array of the median prime numbers of the set of prime numbers less than n.
 
 Uses Sieve of Eratosthenes algorithm [wikipedia page](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
-
-# How does it look?
+n = 1,000,000 took ~1.5s on an old MacBook Air
 
 # Getting Started
 - Frontend React/Redux (bootstrapped with Create-React-App)

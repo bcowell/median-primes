@@ -5,9 +5,10 @@ export const doFindMedianPrimes = async (req, res) => {
 
     try {
         if (!req.params || !req.params.n) { throw Error('Please provide an upper limit in params.') }
-        if (typeof parseInt(req.params.n) !== 'number') { throw Error('Upper limit must be a number!') }
+        const n = parseInt(req.params.n);
+        if (typeof n !== 'number') { throw Error('Upper limit must be a number!') }
 
-        const data = await medianPrimes(req.params.n);
+        const data = await medianPrimes(n);
         return res
             .status(OK)
             .send({ 'status': 'success', 'data': data });

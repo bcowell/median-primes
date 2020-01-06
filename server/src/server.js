@@ -17,3 +17,5 @@ app.use(baseURL, router);
 
 app.listen(PORT);
 console.log(`Running on localhost port ${PORT}`);
+
+export default app;

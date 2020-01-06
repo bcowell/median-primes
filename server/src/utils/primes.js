@@ -24,7 +24,7 @@ const findMedian = (arr) => {
 
 // Sieve of Eratosthenes algorithm [wikipedia page](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
 const sieveOfEratosthenes = (n) => {
-    // Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
+    // Create a list to hold our prime integers from 2 through n: (2, 3, 5, ..., n).
     let primeArr = _.range(0, n + 1).fill(true);
 
     // Initially, let p equal 2, the smallest prime number.

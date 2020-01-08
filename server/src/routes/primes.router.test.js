@@ -1,6 +1,6 @@
 import request from 'supertest';
 import { OK } from 'http-status-codes';
-import app from '../server';
+import app from 'server';
 
 describe('Integration tests', () => {
 

@@ -1,11 +1,8 @@
 import { combineReducers } from 'redux';
-
-function dummyReducerA() { return true }
-function dummyReducerB() { return false }
+import primeReducer from './primeReducer';
 
 const rootReducer = combineReducers({
-    dummyReducerA,
-    dummyReducerB
+    primes: primeReducer,
 })
 
 export default rootReducer;

@@ -11,7 +11,9 @@ import _ from 'lodash';
  */
 
 const medianPrimes = (n) => {
-    return findMedian(sieveOfEratosthenes(n));
+    return n < 2
+    ? []
+    : findMedian(sieveOfEratosthenes(n));
 }
 
 // Given an array if odd length return the single median

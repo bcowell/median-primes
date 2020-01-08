@@ -1,0 +1,2 @@
+export const REQUEST_PRIMES = 'REQUEST_PRIMES';
+export const RECEIVE_PRIMES = 'RECEIVE_PRIMES';
